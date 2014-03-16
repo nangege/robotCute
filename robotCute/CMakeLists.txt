@@ -1,0 +1,31 @@
+PROJECT(robotCute)
+CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+
+FIND_PACKAGE(QT4 REQUIRED)
+FIND_PACKAGE(OpenCV REQUIRED)
+
+
+INCLUDE(${QT_USE_FILE})
+INCLUDE_DIRECTORIES(${CMAKE_CURRENT_BINARY_DIR})
+ADD_DEFINITIONS(${QT_DEFINITIONS})
+
+SET(ROBOTCUTE_HEADERS mainwindow.h videoThread.h faceDetector.h faceSketch.h
+				faceRecognition.h moveObjDetector.h colorFinder.h facethread.h)
+SET(ROBOTCUTE_UIS mainwindow.ui)
+SET(ROBOTCUTE_QRCS robotCute.qrc)
+SET(ROBOTCUTE_SRCS main.cpp mainwindow.cpp faceDetector.cpp videoThread.cpp faceSketch.cpp 
+				faceRecognition.cpp moveObjDetector.cpp colorFinder.cpp facethread.cpp ${ROBOTCUTE_QRCS})
+
+SET(QT_USE_QTGUI true)
+SET(QT_USE_QTWIDGETS true)
+QT4_WRAP_CPP(ROBOTCUTE_HEADERS_MOC ${ROBOTCUTE_HEADERS})
+QT4_WRAP_UI(ROBOTCUTE_UIS_UIC ${ROBOTCUTE_UIS})
+QT4_ADD_RESOURCES(ROBOTCUTE_QRC_RCC ${ROBOTCUTE_QRCS})
+
+ADD_EXECUTABLE(robotCute ${ROBOTCUTE_SRCS} ${ROBOTCUTE_HEADERS_MOC} ${ROBOTCUTE_UIS_UIC} ${ROBOTCUTE_QRC_RCC})
+
+TARGET_LINK_LIBRARIES(robotCute ${OpenCV_LIBS} ${QT_LIBRARIES})
+		
+
+
+

@@ -1,0 +1,13 @@
+-I/usr/local/include/opencv
+-I/usr/local/include
+-I/opt/anaconda1anaconda2anaconda3/include
+-F/Library/Frameworks
+-I/Library/Frameworks/QtGui.framework/Headers
+-I/Library/Frameworks/QtCore.framework/Headers
+-I/Users/zhanghuiping/Desktop/robotCute/robotCute/build
+-DQT_NO_DEBUG
+-DQT_GUI_LIB
+-DQT_CORE_LIB
+-o
+/Users/zhanghuiping/Desktop/robotCute/robotCute/build/moc_colorFinder.cxx
+/Users/zhanghuiping/Desktop/robotCute/robotCute/colorFinder.h

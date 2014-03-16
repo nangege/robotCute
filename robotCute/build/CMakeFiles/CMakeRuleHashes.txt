@@ -1,0 +1,11 @@
+# Hashes of file build rules.
+f97ccc8865775ef463c1133f5eecfa39 moc_colorFinder.cxx
+b66f8910b7a0004d1f9ccf8bf73b4833 moc_faceDetector.cxx
+52fb05f7628bc67e78d10531785fcb57 moc_faceRecognition.cxx
+9343e38e437166e08b6f0204feb9008f moc_faceSketch.cxx
+89b89e805b7ab950b67763f80b069202 moc_facethread.cxx
+2f8e88408ab492eb72edbbadc0443487 moc_mainwindow.cxx
+0c5ee901ef17e3148e4d782705e04f84 moc_moveObjDetector.cxx
+b5937358808a175ab771db84ea498fb9 moc_videoThread.cxx
+d1cbfd80810ae03f8c5d15ad6f5019ed qrc_robotCute.cxx
+4a9046a41d44e85562aa084cb47c83e5 ui_mainwindow.h
